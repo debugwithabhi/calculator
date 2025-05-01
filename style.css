@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(184, 192, 199);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#calculator {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(122, 110, 110);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 15px;
+    font-size: 2rem;
+    text-align: right;
+    border: none;
+    background-color: rgb(63, 58, 58);
+    color: whitesmoke;
+    box-sizing: border-box;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(84, 158, 243);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(9, 118, 243);
+}
+
+button:active {
+    background-color: rgb(51, 139, 240);
+}
+
+.operator-btn {
+    background-color: rgb(142, 192, 42);
+}
+
+.operator-btn:hover {
+    background-color: rgb(158, 223, 29);
+}
+
+.operator-btn:active {
+    background-color: rgb(123, 158, 48);
+}
+
+/* Optional: Slightly scale down for very small screens */
+@media (max-width: 360px) {
+    #display {
+        font-size: 1.5rem;
+    }
+    
+    button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
